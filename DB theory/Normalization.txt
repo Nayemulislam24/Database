@@ -1,0 +1,2 @@
+Nomalization: ডাটাবেস ম্যানেজমেন্ট  সিস্টেম   এর রিলেশনাল ডাটাবেস এর  reduncey ও dependency কে minimize
+করার জন্য এর field ও table সমূহকে সুসংগঠিত করার 

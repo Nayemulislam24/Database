@@ -1,0 +1,30 @@
+SQL Commands:
+Data Dafination language(DDL)
+1.create
+2.alter
+3.drop
+4.trancate
+4.rename
+
+Data Manipulation language(MML)
+1.select
+2.insert
+3.update
+4.delete
+
+Data control language
+1.grant
+2.revoke
+
+TCL – Transaction Control Language
+1.COMMIT
+2.ROLLBACK
+3.SAVEPOINT
+
+Constraints
+1.NOT NULL
+2.UNIQUE
+3.PRIMARY KEY
+4.FOREIGN KEY
+5.CHECK
+6.DEFAULT

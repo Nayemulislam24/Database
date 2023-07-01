@@ -1,0 +1,18 @@
+
+1.Mysql workbensh client tool
+GUI tool
+
+2.Mysql shell commnad line tool
+Do we have to download and install Mysql shell command line tool?
+
+
+3.MySQL shell command line tool
+To connect to the mysql server and access the database.
+
+4.Mysql software 
+mysql server 
+workbench 
+shell command
+
+5.Default windows command promt 
+connecting to the mysql server and there by perform operations on the Database

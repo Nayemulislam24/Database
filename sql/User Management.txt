@@ -1,0 +1,28 @@
+			MySQL Create User
+
+
+Syntax:CREATE USER [IF NOT EXISTS] account_name IDENTIFIED BY 'password';  
+
+MySQL CREATE USER Example
+
+The following are the step required to create a new user in the MySQL server database.
+
+Step 1: Open the MySQL server by using the mysql client tool.
+
+Step 2: Enter the password for the account and press Enter.
+
+Enter Password: ********  
+
+Step 3: Execute the following command to show all users in the current MySQL server.
+
+mysql> select user from mysql.user;  
+
+Step 4: Create a new user with the following command.
+
+mysql> create user peter@localhost identified by 'jtp12345';  
+
+In the above output, we can see that the user peter has been created successfully.
+
+Step 5: Now, we will use the IF NOT EXISTS clause with the CREATE USER statement.
+
+mysql> CREATE USER IF NOT EXISTS adam@localhost IDENTIFIED BY 'jtp123456';  

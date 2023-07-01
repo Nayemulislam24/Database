@@ -58,3 +58,12 @@ USE mysql;
 mysql> UPDATE user SET password = PASSWORD('jtp12345') WHERE user = 'peter' AND host = 'localhost';  
    
 mysql> FLUSH PRIVILEGES;  
+
+		Change user account password using SET PASSWORD statement
+
+syntex:SET PASSWORD FOR 'peter'@'localhost' = PASSWORD('jtp12345');  
+example:SET PASSWORD FOR 'peter'@'localhost' = jtp12345;  
+
+		Change user account password using ALTER USER statement
+
+Syntex:ALTER USER peter@localhost IDENTIFIED BY 'jtp123';  

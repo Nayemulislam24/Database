@@ -26,3 +26,35 @@ In the above output, we can see that the user peter has been created successfull
 Step 5: Now, we will use the IF NOT EXISTS clause with the CREATE USER statement.
 
 mysql> CREATE USER IF NOT EXISTS adam@localhost IDENTIFIED BY 'jtp123456';  
+			
+			MySQL Drop User
+
+Syntax:DROP USER 'account_name';  
+Example:DROP USER martin@localhost;  
+
+			MySQL Show Users
+mysql> SELECT user, host, account_locked, password_expired FROM user;  
+
+			Show Current User
+syntex:	
+mysql> Select user();  
+         or,  
+mysql> Select current_user();  
+
+			Show Current Logged User
+syntex:mysql> SELECT user, host, db, command FROM information_schema.processlist;  
+
+			Change MySQL User Password
+MySQL allows us to change the user account password in three different ways, which are given below:
+
+UPDATE Statement
+SET PASSWORD Statement
+ALTER USER Statement
+
+		Change user account password using the UPDATE statement
+syntex:mysql> 
+USE mysql;  
+   
+mysql> UPDATE user SET password = PASSWORD('jtp12345') WHERE user = 'peter' AND host = 'localhost';  
+   
+mysql> FLUSH PRIVILEGES;  

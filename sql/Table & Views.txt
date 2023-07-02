@@ -97,3 +97,53 @@ Example:
 ALTER TABLE cus_tbl  
 RENAME TO cus_table;  
 
+
+
+
+
+						MySQL Rename Table
+
+Syntax:ALTER TABLE old_table_name RENAME TO new_table_name;   
+
+Example:ALTER TABLE employee_table RENAME TO employee;
+
+table locked and unlocked
+LOCK TABLE old_tab_name1 WRITE; 
+
+LOCK TABLE old_tab_name1 READ;  
+
+				MySQL TRUNCATE Table
+
+
+Syntax:TRUNCATE [TABLE] table_name;  
+Example:TRUNCATE  employee;  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -6,4 +6,8 @@ Example: CREATE DATABASE employeesdb;
 				MySQL SELECT Database
 
 Syntex:USE database_name;  
-Example:USE customers; 
+Example:USE customers;
+				MySQL DROP Database
+
+syntex:DROP DATABASE [IF EXISTS] database_name;    
+Example:DROP DATABASE [IF EXISTS] demo; 

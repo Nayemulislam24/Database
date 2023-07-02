@@ -1,0 +1,99 @@
+			MySQL CREATE TABLE
+
+Syntex:
+CREATE TABLE [IF NOT EXISTS] table_name(  
+    column_definition1,  
+    column_definition2,  
+    ........,  
+    table_constraints  
+); 
+Example:
+ CREATE TABLE employee_table(  
+    id int NOT NULL AUTO_INCREMENT,  
+    name varchar(45) NOT NULL,  
+    occupation varchar(35) NOT NULL,  
+    age int NOT NULL,  
+    PRIMARY KEY (id)  
+);  
+
+			MySQL ALTER Table
+
+
+1) ADD a column in the tables
+
+Syntex:
+ALTER TABLE table_name  
+ADD new_column_name column_definition  
+[ FIRST | AFTER column_name ];
+
+Example:
+ALTER TABLE cus_tbl  
+ADD cus_age varchar(40) NOT NULL;   
+
+2) Add multiple columns in the table 
+
+Syntex: 
+
+ALTER TABLE table_name  
+ ADD new_column_name column_definition  
+ [ FIRST | AFTER column_name ],  
+ADD new_column_name column_definition  
+[ FIRST | AFTER column_name ],  
+  ...  
+;  
+
+Example:
+ALTER TABLE cus_tbl  
+ADD cus_address varchar(100) NOT NULL  
+AFTER cus_surname,  
+ADD cus_salary int(100) NOT NULL  
+AFTER cus_age ;  
+
+
+3) MODIFY column in the table
+
+Syntax:
+
+ALTER TABLE table_name  
+MODIFY column_name column_definition  
+[ FIRST | AFTER column_name ];  
+
+Example:
+ALTER TABLE cus_tbl  
+MODIFY cus_surname varchar(50) NULL;  
+
+4) DROP column in table
+
+Syntax:
+
+ALTER TABLE table_name  
+DROP COLUMN column_name;  
+
+Example:
+ALTER TABLE cus_tbl  
+DROP COLUMN cus_address;  
+
+5) RENAME column in table
+
+Syntax:
+
+ALTER TABLE table_name  
+CHANGE COLUMN old_name new_name   
+column_definition  
+[ FIRST | AFTER column_name ]  
+
+Example:
+ ALTER TABLE  cus_tbl  
+CHANGE COLUMN cus_surname cus_title  
+varchar(20) NOT NULL;
+
+6) RENAME table
+
+Syntax:
+
+ALTER TABLE table_name  
+RENAME TO new_table_name;  
+Example:
+ALTER TABLE cus_tbl  
+RENAME TO cus_table;  
+

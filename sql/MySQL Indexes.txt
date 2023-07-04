@@ -1,0 +1,24 @@
+			How to Create Index in MySQL
+
+Syntax:
+CREATE INDEX [index_name] ON [table_name] (column names)  
+
+				MySQL Drop Index
+Syntax:
+DROP INDEX index_name ON table_name [algorithm_option | lock_option];  
+Example:
+DROP INDEX class ON student;  
+
+			MySQL Show Indexes
+
+Syntax:
+ SHOW INDEXES FROM table_name; 
+
+			MySQL UNIQUE INDEX
+
+
+Syntax
+The following is a generic syntax used to create a unique index in MySQL table:
+
+CREATE UNIQUE INDEX index_name  
+ON table_name (index_column1, index_column2,...);  

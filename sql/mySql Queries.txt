@@ -47,7 +47,7 @@ INSERT INTO People VALUES
 
 				MySQL UPDATE Query
 
-Syntax
+Syntax:
 Following is a generic syntax of UPDATE command to modify data into the MySQL table:
 
 UPDATE table_name     
@@ -55,4 +55,87 @@ SET column_name1 = new-value1,
         column_name2=new-value2, ...    
 [WHERE Clause]  
 
+
+Example:
+Update Single Column
+
+This query will update the email id of Java course with the new id as follows:
+
+UPDATE trainer    
+SET email = 'mike@tutorialandexamples.com'    
+WHERE course_name = 'Java';  
+
+ 				MySQL DELETE Statement
+
+Syntax:
+
+The following are the syntax that illustrates how to use the DELETE statement:
+
+DELETE FROM table_name WHERE condition;  
+Example:
+DELETE FROM Employees WHERE emp_id=107; 
  
+MySQL DELETE and LIMIT Clause
+DELETE FROM table_name  
+WHERE condition   
+ORDER BY colm1, colm2, ...  
+LIMIT row_count;  
+
+
+DELETE FROM Employees ORDER BY name LIMIT 3;  
+
+				MySQL SELECT Statement
+
+
+
+
+SELECT Statement Syntax
+It is the most commonly used SQL query. The general syntax of this statement to fetch data from tables are as follows:
+
+SELECT field_name1, field_name 2,... field_nameN   
+FROM table_name1, table_name2...  
+[WHERE condition]  
+[GROUP BY field_name(s)]  
+[HAVING condition]   
+[ORDER BY field_name(s)]  
+[OFFSET M ][LIMIT N];  
+
+Syntax for all fields:
+SELECT * FROM tables [WHERE conditions]  
+[GROUP BY fieldName(s)]  
+[HAVING condition]   
+[ORDER BY fieldName(s)]  
+[OFFSET M ][LIMIT N];  
+
+				MySQL REPLACE
+
+Syntax:
+
+The following are the syntax of REPLACE statement in MySQL:
+
+REPLACE [INTO] table_name(column_list)  
+VALUES(value_list);  
+Example:
+REPLACE INTO Person (id, city)  
+VALUES(4,'Amsterdam');  
+
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

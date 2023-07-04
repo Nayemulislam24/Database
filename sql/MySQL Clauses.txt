@@ -1,0 +1,24 @@
+				MySQL WHERE Clause
+
+Syntax:
+WHERE conditions;  
+Example:
+Execute this query:
+
+SELECT *  
+FROM officers  
+WHERE address = 'Mau';  
+				MySQL Distinct Clause
+
+Syntax:
+
+SELECT DISTINCT expressions  
+FROM tables  
+[WHERE conditions];  
+				MySQL FROM Clause
+
+Syntax:
+
+FROM table1  
+[ { INNER JOIN | LEFT [OUTER] JOIN| RIGHT [OUTER] JOIN } table2  
+ON table1.column1 = table2.column1 ]  

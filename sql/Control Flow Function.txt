@@ -1,0 +1,105 @@
+				Control Flow Function
+
+MySQL IF()
+Syntax
+IF ( expression 1, expression 2, expression 3)  
+
+Example 1
+SELECT IF(200>350,'YES','NO');  
+
+				MySQL CASE Expression
+Syntax
+CASE value   
+    WHEN [compare_value] THEN result   
+    [WHEN [compare_value] THEN result ...]   
+    [ELSE result]   
+END  
+
+Example
+mysql> SELECT CASE 1 WHEN 1 THEN 'one' WHEN 2 THEN 'two' ELSE 'more' END;  
+
+				MySQL IFNULL()
+
+Syntax
+We can use the IFNULL function with the following syntax:
+
+IFNULL (Expression1, Expression2)  
+
+Example 1
+SELECT IFNULL(0,5);  
+
+				MySQL NULLIF()
+
+Syntax
+We can use the NULLIF function with the following syntax:
+
+NULLIF (Expression1, Expression2)  
+
+Example 1
+SELECT NULLIF("javaTpoint", "javaTpoint");  
+						
+
+
+					MySQL IF Statement
+
+
+			IF-THEN Statement
+
+
+IF condition THEN   
+   statements;  
+END IF; 
+
+
+Example
+The IF...ENDIF block executes with stored programs and terminates with a semicolon, as shown in the below example.
+
+DELIMITER $$  
+CREATE PROCEDURE myResult(original_rate NUMERIC(6,2),OUT discount_rate NUMERIC(6,2))  
+     NO SQL  
+      BEGIN  
+         IF (original_rate>200) THEN  
+            SET discount_rate=original_rate*.5;  
+         END IF;  
+         select discount_rate;  
+     END$$  
+DELIMITER $$;  
+
+
+			IF-THEN-ELSEIF-ELSE Statement
+
+IF condition THEN  
+   statements;  
+ELSEIF elseif-condition THEN  
+   elseif-statements;  
+...  
+ELSE  
+   else-statements;  
+END IF; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

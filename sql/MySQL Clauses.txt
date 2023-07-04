@@ -22,3 +22,80 @@ Syntax:
 FROM table1  
 [ { INNER JOIN | LEFT [OUTER] JOIN| RIGHT [OUTER] JOIN } table2  
 ON table1.column1 = table2.column1 ]  
+
+				MySQL ORDER BY Clause
+Syntax:
+
+SELECT expressions  
+FROM tables  
+[WHERE conditions]  
+ORDER BY expression [ ASC | DESC ];  
+
+Example:
+SELECT *  
+FROM officers  
+WHERE address = 'Lucknow'  
+ORDER BY officer_name ASC;  
+
+
+			MySQL GROUP BY Clause
+Syntax:
+
+SELECT expression1, expression2, ... expression_n,   
+aggregate_function (expression)  
+FROM tables  
+[WHERE conditions]  
+GROUP BY expression1, expression2, ... expression_n;  
+
+
+Execute the following query:
+
+SELECT address, COUNT(*)  
+FROM   officers   
+GROUP BY address;  
+					MySQL HAVING Clause
+
+
+Syntax:
+SELECT expression1, expression2, ... expression_n,   
+aggregate_function (expression)  
+FROM tables  
+[WHERE conditions]  
+GROUP BY expression1, expression2, ... expression_n  
+HAVING condition;  
+
+Execute the following query:
+
+SELECT emp_name, SUM(working_hours) AS "Total working hours"  
+FROM employees  
+GROUP BY emp_name  
+HAVING SUM(working_hours) > 5;  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

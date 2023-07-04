@@ -1,0 +1,58 @@
+				MySQL Queries	
+
+The following constraints are commonly used in SQL:
+
+NOT NULL - Ensures that a column cannot have a NULL value
+UNIQUE - Ensures that all values in a column are different
+PRIMARY KEY - A combination of a NOT NULL and UNIQUE. Uniquely identifies each row in a table
+FOREIGN KEY - Prevents actions that would destroy links between tables
+CHECK - Ensures that the values in a column satisfies a specific condition
+DEFAULT - Sets a default value for a column if no value is specified
+CREATE INDEX - Used to create and retrieve data from the database very quickly
+AUTO_INCREMENT
+
+
+				MySQL INSERT Statement
+
+Syntax:
+The below is generic syntax of SQL INSERT INTO command to insert a single record in MySQL table:
+
+INSERT INTO table_name ( field1, field2,...fieldN )    
+VALUES    
+( value1, value2,...valueN );   
+
+
+Example:
+1. If we want to store single records for all fields, use the syntax as follows:
+
+INSERT INTO People (id, name, occupation, age)   
+VALUES (101, 'Peter', 'Engineer', 32);  
+
+Syntax:
+If we want to insert multiple records within a single command, use the following statement:
+
+INSERT INTO table_name VALUES  
+( value1, value2,...valueN )  
+( value1, value2,...valueN )  
+...........  
+( value1, value2,...valueN );
+
+Example:
+2. If we want to store multiple records, use the following statements where we can either specify all field names or don't specify any field.
+
+INSERT INTO People VALUES  
+(102, 'Joseph', 'Developer', 30),  
+(103, 'Mike', 'Leader', 28),  
+(104, 'Stephen', 'Scientist', 45);     
+
+				MySQL UPDATE Query
+
+Syntax
+Following is a generic syntax of UPDATE command to modify data into the MySQL table:
+
+UPDATE table_name     
+SET column_name1 = new-value1,   
+        column_name2=new-value2, ...    
+[WHERE Clause]  
+
+ 

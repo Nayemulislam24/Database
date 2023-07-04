@@ -1,0 +1,142 @@
+			MySQL AND Condition
+
+Syntax:
+WHERE condition1  
+AND condition2  
+...  
+AND condition_n;  
+
+Example:
+
+SELECT *  
+FROM cus_tbl  
+WHERE cus_firstname = 'Ajeet'  
+AND cus_id > 3;  
+
+				MySQL AND & OR condition
+
+Syntax:
+
+WHERE condition1  
+AND condition2  
+...  
+OR condition_n;  
+
+
+Execute the following query:
+
+SELECT *  
+FROM students  
+WHERE (course_name = 'Java' AND student_name = 'Aryan')  
+OR (student_id < 2);  
+
+			MySQL LIKE condition
+
+Syntax:
+
+expression LIKE pattern [ ESCAPE 'escape_character' ]  
+
+Execute the following query:
+
+ SELECT officer_name  
+FROM officers  
+WHERE address LIKE 'Luck%';  
+
+				MySQL IN Condition
+
+Syntax:
+expression IN (value1, value2, .... value_n);  
+
+Execute the following query:
+
+SELECT *  
+FROM officers  
+WHERE officer_name IN ('Ajeet', 'Vimal', 'Deepika');  
+
+						MySQL ANY
+
+Syntax
+The following is the syntax that illustrates the use of ANY operator in MySQL:
+
+operand comparison_operator ANY (subquery)  
+						MySQL Exists
+
+
+
+Syntax:
+The following are the syntax to use the EXISTS operator in MySQL:
+
+SELECT col_names  
+FROM tab_name  
+WHERE [NOT] EXISTS (  
+    SELECT col_names   
+    FROM tab_name   
+    WHERE condition  
+);  
+
+
+Example:
+mysql> SELECT name, occupation FROM customer  
+WHERE EXISTS (SELECT * FROM Orders   
+WHERE customer.cust_id = Orders.cust_id);  
+
+					MySQL NOT Condition
+
+Syntax:
+NOT condition 
+
+Example:
+SELECT *  
+FROM officers  
+WHERE officer_id NOT BETWEEN 3 AND 5;  
+
+
+				MySQL Not Equal
+
+SELECT * FROM students WHERE city <> "England";  
+OR,
+
+SELECT * FROM students WHERE city != "England";  
+							MySQL IS NULL Condition
+
+Syntax:
+
+expression IS NULL  
+
+
+Execute the following query:
+
+SELECT *  
+FROM officers  
+WHERE officer_name IS NULL;  
+
+				MySQL IS NOT NULL Condition
+Syntax:
+
+expression IS NOT NULL  
+
+Execute the following query:
+
+SELECT *  
+FROM officers  
+WHERE officer_name IS NOT NULL;  
+
+				MySQL BETWEEN Condition
+Syntax:
+
+expression BETWEEN value1 AND value2;   
+
+Execute the following query:
+
+SELECT *  
+FROM officers  
+WHERE officer_id BETWEEN 1 AND 3;   
+
+
+
+
+
+
+
+
+

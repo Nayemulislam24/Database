@@ -1,1 +1,22 @@
 				MySQL JOINS
+
+Supported Types of Joins in MySQL
+INNER JOIN: Returns records that have matching values in both tables
+LEFT JOIN: Returns all records from the left table, and the matched records from the right table
+RIGHT JOIN: Returns all records from the right table, and the matched records from the left table
+CROSS JOIN: Returns all records from both tables
+
+				MySQL Inner Join
+
+MySQL Inner Join Syntax:
+SELECT columns  
+FROM table1  
+INNER JOIN table2 ON condition1  
+INNER JOIN table3 ON condition2  ...; 
+
+MySQL Inner Join Example
+
+SELECT students.stud_fname, students.stud_lname, students.city, technologies.technology    
+FROM students   
+INNER JOIN technologies    
+ON students.student_id = technologies.tech_id;  

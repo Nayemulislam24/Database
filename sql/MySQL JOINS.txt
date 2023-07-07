@@ -5,6 +5,18 @@ INNER JOIN: Returns records that have matching values in both tables
 LEFT JOIN: Returns all records from the left table, and the matched records from the right table
 RIGHT JOIN: Returns all records from the right table, and the matched records from the left table
 CROSS JOIN: Returns all records from both tables
+					simple join
+select students.roll,reg_number,name,gender,group_name,gpa
+from students,exam_result
+where students.roll = exam_result.roll;
+
+
+
+
+
+
+
+
 
 				MySQL Inner Join
 
@@ -38,3 +50,33 @@ To select records from both tables, execute the following query:
 SELECT customers.customer_id, cust_name, price, date  
 FROM customers  
 LEFT JOIN orders ON customers.customer_id = orders.customer_id;  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

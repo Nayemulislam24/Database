@@ -1,0 +1,11 @@
+			sub-query
+
+Form table higest selary  query
+
+
+select * from  employee where e_selary = (select max(e_selary)  from employee);
+
+Form table minimum selary query
+
+select * from  employee where e_selary = (select min(e_selary)  from employee);
+

@@ -3,6 +3,7 @@
 
 Syntax:CREATE USER [IF NOT EXISTS] account_name IDENTIFIED BY 'password';  
 
+
 MySQL CREATE USER Example
 
 The following are the step required to create a new user in the MySQL server database.

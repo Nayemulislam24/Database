@@ -9,3 +9,8 @@ Form table minimum selary query
 
 select * from  employee where e_selary = (select min(e_selary)  from employee);
 
+
+Form table second higest selary  query
+
+
+

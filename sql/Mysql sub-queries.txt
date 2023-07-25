@@ -12,5 +12,8 @@ select * from  employee where e_selary = (select min(e_selary)  from employee);
 
 Form table second higest selary  query
 
+select * from employee where e_selary = (select max(e_selary) as selary from employee where e_selary !=
+(select max(e_selary) from employee));
+
 
 

@@ -22,5 +22,13 @@ that dept.
 select e_dept ,count(e_dept) from employee group by e_dept;
 
 
+write a sql query to display the name of employee of the dept where number of employee are less than
+than 2.
+
+select * from employee where e_dept in (select e_dept from employee group by e_dept having count(e_dept)<2);
+
+
+
+
 
 

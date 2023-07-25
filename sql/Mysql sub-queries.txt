@@ -16,4 +16,11 @@ select * from employee where e_selary = (select max(e_selary) as selary from emp
 (select max(e_selary) from employee));
 
 
+write a sql query to display all the dept name along with no of employee working in 
+that dept.
+
+select e_dept ,count(e_dept) from employee group by e_dept;
+
+
+
 

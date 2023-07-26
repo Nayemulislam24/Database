@@ -18,6 +18,12 @@ Ans.
 select * from employee where e_selary = (select max(e_selary) as selary from employee where e_selary !=
 (select max(e_selary) from employee));
 
+..Nth higest selary 
+
+select distinct (e_selary) from employee
+limit 5, 1;
+
+
 
 ...write a sql query to display all the dept name along with no of employee working in 
 that dept.
@@ -62,6 +68,11 @@ Ans.
 select * from employee where EXISTS
 (select e_id from project where 
 employee.e_id = project.e_id);
+
+..Nth higest selary 
+
+select distinct (e_selary) from employee
+limit 5, 1;
 
 
 

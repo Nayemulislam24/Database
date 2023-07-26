@@ -1,32 +1,50 @@
 			sub-query
 
-Form table higest selary  query
+...Form table higest selary  query
 
 
 select * from  employee where e_selary = (select max(e_selary)  from employee);
 
-Form table minimum selary query
+....Form table minimum selary query
 
 select * from  employee where e_selary = (select min(e_selary)  from employee);
 
 
-Form table second higest selary  query
+..Form table second higest selary  query
 
 select * from employee where e_selary = (select max(e_selary) as selary from employee where e_selary !=
 (select max(e_selary) from employee));
 
 
-write a sql query to display all the dept name along with no of employee working in 
+...write a sql query to display all the dept name along with no of employee working in 
 that dept.
 
 select e_dept ,count(e_dept) from employee group by e_dept;
 
 
-write a sql query to display the name of employee of the dept where number of employee are less than
+...write a sql query to display the name of employee of the dept where number of employee are less than
 than 2.
 
 select * from employee where e_dept in (select e_dept from employee group by e_dept having count(e_dept)<2);
 
+
+...whrite a sql query to display highest salary by dept wise and name of the employee who is 
+taking that salary.
+
+select * from employee where(e_dept,e_selary)
+ in
+(select e_dept, max(e_selary) from employee 
+group by e_dept);
+
+
+...Find the detail of Employee whose address is either Dhaka ir CTG or Khulna.
+
+select * from employee where address IN ('Dhaka','CTG','khulna');
+
+
+...Find the name of Employees Who are working on a project
+
+select name from employee where e_id In(select e_Id from project)
 
 
 
